@@ -2,12 +2,12 @@
 library(igraph)
 require("RPostgreSQL")
 pw <- {
-  "postgres"
+  ""
 }
 
 drv <- dbDriver("PostgreSQL")
 con <- dbConnect(drv, dbname = "postgres",
-                 host = "146.148.104.137", port = 5432,
+                 host = "100.100.100.100", port = 5432,
                  user = "postgres", password = pw)
 rm(pw) # removes the password
 
